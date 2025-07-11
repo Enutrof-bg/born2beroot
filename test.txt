@@ -1,0 +1,57 @@
+Pourquoi mettre une politique de mot de passe securisé ?
+
+A quoi sert UFW ? SSH ? CRON ?
+
+Qu'est ce qu'une machine virtuelle ? et pourquoi s'en servir ?
+
+Pourquoi avoir choisi Debian ?
+Difference entre Debian et Rocky ?
+
+Difference entre apt et aptitude
+
+A quoi sert Apparmor ?
+
+a quoi sert sudo et pourquoi l'utiliser ?
+
+test :
+
+Creer un nouvel utilisateur
+Creer un nouveau groupe
+rajouter le nouvel utilisateur dans  le nouveau groupe
+verifier qu'il a bien ete ajouté
+
+
+
+modifier le hostname de la machine (42)
+montrer les partitions de la machine
+
+
+
+verifier que sudo est bien installe
+donner les permissions sudo au nouvel utilisateur
+verifier et ouvrir le fichier contenant l'historique des commandes sudo
+faire une commande sudo (sudo cat par exemple) et verifier que l'historique a ete mis a jour
+
+
+verifier que ssh est bien configuré, pour ufw aussi
+
+
+
+se connecter en ssh a la machine virtuelle avec le nouvel utilisateur
+quitter et se connecter en ssh a la machine virtuelle avec root(ne dois pas fonctionner)
+verifier que ssh utilise que le port 4242
+
+
+
+autoriser un nouveau port 8080
+verfier que le nouveau port a ete rajoute
+supprimer le port 8080
+verifier qu'il a ete supprime
+
+
+
+Comment as tu fait pour que le script fonctionne toutes les 10minutes ?
+Modifie ca pour que ca fonctionne toutes les 1minute
+
+
+

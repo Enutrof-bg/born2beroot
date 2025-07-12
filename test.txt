@@ -30,9 +30,10 @@ verifier qu'il a bien ete ajouté dans le groupe
 modifier le mot de passe du nouvelle utilisateur, quel est le resultat ?
 //supprimer l'utilisateur
 
-
 Montrer et expliquer comment vous avez implementé les regles pour les mots de passe
 Quels sont les avantages et les inconvenients d'implementer ces regles pour les mots de passe ? ('parce que c'est demandé' n'est pas une reponse valable)
+
+
 
 
 Modifier le hostname de la machine (login42) et reboot pour voir si les changements ont bien été enregistré
@@ -41,12 +42,16 @@ Montrer les partitions de la machine
 
 
 
+
 Verifier que sudo est bien installé
 Donner les permissions sudo au nouvel utilisateur
 Ouvrir et expliquer le fichier où vous avez instauré les regles pour sudo
 Verifier et ouvrir le fichier contenant l'historique des commandes sudo
 Faire une commande sudo (sudo cat par exemple) et verifier que l'historique a ete mis a jour
+
 Expliquer l'utilité de sudo 
+
+
 
 
 Verifier que UFW est installé et actif 
@@ -57,6 +62,8 @@ Supprimer le port 8080
 Verifier qu'il a bien été supprimé
 
 A quoi sert UFW et pourquoi l'utiliser ?
+
+
 
 
 Verifier que ssh est installé et actif
@@ -72,5 +79,6 @@ A quoi sert SSH et pourquoi l'utiliser ?
 Comment as tu fait pour que le script fonctionne toutes les 10minutes ?
 Modifie ca pour que ca fonctionne toutes les 1minute
 Desactiver le cron pour qu'il ne soit plus actif meme apres un reboot
+
 A quoi sert CRON et pourquoi l'utiliser ?
 

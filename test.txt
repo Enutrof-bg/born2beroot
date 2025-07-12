@@ -1,7 +1,3 @@
-Pourquoi mettre une politique de mot de passe securisé ?
-
-A quoi sert UFW ? SSH ? CRON ?
-
 Qu'est ce qu'une machine virtuelle ? et pourquoi s'en servir ?
 
 Pourquoi avoir choisi Debian ?
@@ -11,47 +7,70 @@ Difference entre apt et aptitude
 
 A quoi sert Apparmor ?
 
-a quoi sert sudo et pourquoi l'utiliser ?
+A quoi sert sudo et pourquoi l'utiliser ?
+
+Quels sont les avantages et les inconvenients d'implementer ces regles pour les mots de passe ? ('parce que c'est demandé' n'est pas une reponse valable
+A quoi sert UFW et pourquoi l'utiliser ?
+A quoi sert SSH et pourquoi l'utiliser ?
+A quoi sert CRON et pourquoi l'utiliser ?
 
 test :
 
-Creer un nouvel utilisateur
-Creer un nouveau groupe
-rajouter le nouvel utilisateur dans  le nouveau groupe
-verifier qu'il a bien ete ajouté
-
-
-
-modifier le hostname de la machine (42)
-montrer les partitions de la machine
-
-
-
-verifier que sudo est bien installe
-donner les permissions sudo au nouvel utilisateur
-verifier et ouvrir le fichier contenant l'historique des commandes sudo
-faire une commande sudo (sudo cat par exemple) et verifier que l'historique a ete mis a jour
-
-
+verifier qu'il n'y a pas d'interface graphique d'installé
 verifier que ssh est bien configuré, pour ufw aussi
+verifier qu'elle est le systeme d'exploitation
+verifier que l'evalué est dans le groupe 'sudo' et 'user42'
+
+
+Creer un nouvel utilisateur avec un mot de passe qui ne respecte pas les regles pour tester
+Creer un nouvel utilisateur
+Creer un nouveau groupe 'evaluating'
+rajouter le nouvel utilisateur dans le nouveau groupe
+verifier qu'il a bien ete ajouté dans le groupe
+modifier le mot de passe du nouvelle utilisateur, quel est le resultat ?
+//supprimer l'utilisateur
+
+
+Montrer et expliquer comment vous avez implementé les regles pour les mots de passe
+Quels sont les avantages et les inconvenients d'implementer ces regles pour les mots de passe ? ('parce que c'est demandé' n'est pas une reponse valable)
+
+
+Modifier le hostname de la machine (login42) et reboot pour voir si les changements ont bien été enregistré
+Remettre le login de base
+Montrer les partitions de la machine
 
 
 
-se connecter en ssh a la machine virtuelle avec le nouvel utilisateur
-quitter et se connecter en ssh a la machine virtuelle avec root(ne dois pas fonctionner)
-verifier que ssh utilise que le port 4242
+Verifier que sudo est bien installé
+Donner les permissions sudo au nouvel utilisateur
+Ouvrir et expliquer le fichier où vous avez instauré les regles pour sudo
+Verifier et ouvrir le fichier contenant l'historique des commandes sudo
+Faire une commande sudo (sudo cat par exemple) et verifier que l'historique a ete mis a jour
+Expliquer l'utilité de sudo 
 
 
+Verifier que UFW est installé et actif 
+Verifier que les ports autorisés (4242 uniquement)
+Autoriser un nouveau port 8080
+Verfier que le nouveau port a ete rajouté
+Supprimer le port 8080
+Verifier qu'il a bien été supprimé
 
-autoriser un nouveau port 8080
-verfier que le nouveau port a ete rajoute
-supprimer le port 8080
-verifier qu'il a ete supprime
+A quoi sert UFW et pourquoi l'utiliser ?
+
+
+Verifier que ssh est installé et actif
+Se connecter en ssh a la machine virtuelle avec le nouvel utilisateur
+Quitter et se connecter en ssh a la machine virtuelle avec root(ne dois pas fonctionner)
+Verifier que ssh utilise que le port 4242
+
+A quoi sert SSH et pourquoi l'utiliser ?
+
 
 
 
 Comment as tu fait pour que le script fonctionne toutes les 10minutes ?
 Modifie ca pour que ca fonctionne toutes les 1minute
-
-
+Desactiver le cron pour qu'il ne soit plus actif meme apres un reboot
+A quoi sert CRON et pourquoi l'utiliser ?
 
